@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Formulário de Inscrição - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    
+    <main class="container">
+        <section class="intro">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </section>
+        <section class="inscription">
+            <p class="prize"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            <form class="formulario">
+                <input type="text"  placeholder="First Name" required name="input" class="input">
+                <span class="message-error preenchido">First Name cannot be empty</span>
+                <input type="text" required placeholder="Last Name" name="" class="input">
+                <span class="message-error preenchido">Last Name cannot be empty</span>
+                <input type="email" required placeholder="Email" name="" class="input" id="email">
+                <span class="message-error preenchido">Looks like this is not an email</span>
+                <input type="password" required name="" placeholder="Password" class="input">
+                <span class="message-error preenchido">Password cannot be empty</span>
+                <input type="submit" id="submit" value="Claim your free trial">
+                <p>By clicking the button, you are agreeing to our <a href="/">Terms and Services</a></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
